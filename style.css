@@ -6,3 +6,55 @@
 body {
     background-color: #f9bad1;
 }
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 20vh;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+#toggle {
+    margin: 1rem;
+}
+#menu-links{
+    /* display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: blue; */
+    display: none;
+}
+#menu-links li {
+    background-color: blueviolet;
+    display: block;
+}
+.active {
+    color: #FF0000;
+    font-weight: bold;
+}
+#start-page {
+    height: 100vh;
+}
+#about-me-page {
+    height: 100vh;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #toggle {
+        display: none;
+    }
+    #menu-links{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        list-style-type: none;
+        background-color: aqua;
+    }
+    #menu-links li {
+        margin-right: 2vw;
+        margin-top: 2vh;
+    }
+}
