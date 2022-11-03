@@ -1,11 +1,15 @@
 const toggle = document.getElementById("toggle");
+const toggleClose = document.getElementById("toggle-close");
 const menuLinks = document.getElementById("menu-links")
-toggle.onclick = () => {
-    if (menuLinks.style.display === "block"){
+
+toggleMenu = () => {
+    if (menuLinks.style.display === "flex"){
         menuLinks.style.display = "none";
-        console.log("stäng meny")
+        toggle.style.display = "block";
+        toggleClose.style.display = "none";
     } else {
-        menuLinks.style.display = 'block';
-        console.log("öppna meny")
+        menuLinks.style.display = "flex";
+        toggleClose.style.display = "block";
+        toggle.style.display = "none";
     }
 }
