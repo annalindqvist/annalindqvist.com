@@ -9,6 +9,24 @@
 }
 body {
     background-color: #f9bad1;
+    padding: 1rem;
+}
+h1, h2, h3 {
+    color: #FF0000;
+    font-family: 'Yeseva One', cursive;
+    margin: 1rem 0 1rem 0;
+}
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 43px;
+    
+}
+h3 {
+    font-size: 32px;
+    
+    text-align: center;
 }
 header {
     position: fixed;
@@ -42,6 +60,8 @@ header nav {
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    padding: 0;
+   
 }
 #menu-links li {
     margin: 1rem;
@@ -54,12 +74,74 @@ header nav {
     font-weight: bold;
 }
 #start-page {
+    /* padding: 1rem; */
     height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
 }
-#about-me-page {
-    height: 100vh;
+#img-container {
+    width: 50vw;
+    height: 50vh;
+    background-image: url(images/IMG_9084.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
 }
 
+#about-me-page {
+    margin-top: 3rem;
+    /* height: 100vh; */
+    width: 100%;
+    /* padding: 1rem 1rem 1rem 1rem; */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 2rem; */
+    justify-content: space-evenly;
+
+}
+#about-me-big-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#about-me-container-2 {
+margin: 1rem;
+}
+#interests-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#interests-rows #interests-row-1, #interests-rows #interests-row-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    font-weight: bold;
+}
+#about-me-container-3 ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+#about-me-container-3 ul li p {
+    
+}
+
+#about-me-container-3 ul li div {
+    background-color: #FFF8F9;
+    width: 200px;
+    height: 12px;
+    
+
+}
 
 @media only screen and (min-width: 768px) {
     #toggle {
@@ -70,10 +152,15 @@ header nav {
         justify-content: flex-end;
         flex-direction: row;
         list-style-type: none;
-        background-color: aqua;
+        width: 100%;
+        height: 100%;
     }
     #menu-links li {
-        margin-right: 2vw;
-        margin-top: 2vh;
+        font-family: 'Manrope', sans-serif;
+        color: #1c1c1c;
     }
+    #start-page {
+        flex-direction: row;
+    }
+    
 }
