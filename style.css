@@ -1,18 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Yeseva+One&display=swap');
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    /* font-family: 'Yeseva One', cursive; */
 }
-main {
-    background-color: #FFC0CB;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+body {
+    background-color: #f9bad1;
+    padding: 1rem;
 }
-main h1 {
+
+h1,
+h2,
+h3
+ {
     color: #FF0000;
+    font-family: 'Yeseva One', cursive;
+    margin: 1rem 0 1rem 0;
+}
+
+h1 {
     font-size: 60px;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 1rem 0 1rem 0;
+
+}
+
+h3 {
+    font-size: 22px;
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+}
+h4 {
+    font-size: 18px;
+    font-weight: normal;
     text-align: center;
 }
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    margin-top: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #FF0000;
+}
+
+.marked-red {
+    color: #FF0000;
+}
+
+.margin-top {
+    margin-top: 1.5rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 3.5rem;
+    background-color: #f9bad1;
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    max-height: 100vh;
+    max-width: 100%;
+}
+
+#toggle,
+#toggle-close {
+    z-index: 9999;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 32px;
+    color: #FF0000;
+}
+
+#toggle-close {
+    display: none;
+}
+
+#menu-links {
+    display: none;
+    background-color: #f9bad1;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    z-index: 9;
+}
+
+#menu-links li {
+    margin: 1rem;
+    font-size: 20px;
+    color: #FF0000;
+    font-family: 'Yeseva One', cursive;
+}
+
+#start-page {
+    /* padding: 1rem; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content:center;
+    position: relative;
+    gap: 2rem;
+}
+
+#img-container {
+    width: 80%;
+    height: 50%;
+    background-image: url(images/anna.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+#about-me-page {
+    /* margin-top: 3rem; */
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.about-me-big-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#about-me-container-1 {
+    text-align: center;
+}
+
+#interests-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#interests-rows #interests-row-1,
+#interests-rows #interests-row-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+#about-me-container-3 ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#about-me-container-3 ul li p {
+    font-weight: 500;
+}
+
+#about-me-container-3 ul li div {
+    background-color: #FFF8F9;
+    width: 200px;
+    height: 12px;
+    position: relative;
+}
+
+#HTML5-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#CSS-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 98%;
+    height: 100%;
+    position: absolute;
+}
+#JavaScript-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 92%;
+    height: 100%;
+    position: absolute;
+}
+#Nodejs-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+#Websocket-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+}
+#React-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+#SASS-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+}
+#Express-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+#CanvasAPI-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+}
+#Wordpress-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 83%;
+    height: 100%;
+    position: absolute;
+}
+#GitHub-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+}
+#Figma-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+}
+
+#about-me-container-4 #language-circles {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+#about-me-container-4 #language-circles div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 3px solid #FFF8F9;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#about-me-container-4 #language-circles #swedish-circle {
+    border: 3px solid #FF0000;
+}
+#about-me-container-4 #language-circles #english-circle {
+    position: relative;
+}
+#about-me-container-4 #language-circles #english-circle #arc-start {
+    border-color: transparent #FF0000 #FF0000 #FF0000;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+#about-me-container-4 #language-circles #english-circle #arc-end {
+    border-color: #FF0000 #FF0000 #FF0000 transparent;
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform: rotate(75deg);
+    position: absolute;
+}
+
+#education-page, #work-experience-page {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-evenly;
+    text-align: center;
+}
+/* #education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+    text-align: center;
+} */
+
+#contact-me-page {
+    
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 2rem; 
+    text-align: center;
+    
+}
+#contact-info-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact-info-container div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    gap: 1rem;
+    text-decoration: none;
+    
+    font-weight: 500;
+    color: #1c1c1c;
+    
+}
+
+#contact-info-container div ion-icon {
+    text-align: left;
+    color: #FF0000;
+    font-size: 28px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 96px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+
+    a:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    #menu-links {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        margin-right: 1rem;
+    }
+
+    #menu-links li {
+        /* font-family: 'Manrope', sans-serif; */
+        /* color: #1c1c1c; */
+        color: #FF0000;
+    }
+
+    #start-page {
+        flex-direction: row;
+        gap: 0;
+    }
+    #img-container {
+        width: 40%;
+        height: 80%;
+    }
+
+    #about-me-page {
+        flex-direction: row;
+        align-items: initial;
+    }
+    .about-me-big-container {
+        width: 50%;
+        
+    }
+    #about-me-container-3 ul li div {
+        background-color: #FFF8F9;
+        width: 250px;
+        height: 12px;
+        position: relative;
+    }
+    #education-page div, #work-experience-page div{
+        max-width: 50%;
+        
+    }

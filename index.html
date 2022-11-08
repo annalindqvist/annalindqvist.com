@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,262 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <main>
-        <h1>Something is happening here, I promise.</h1>
-    </main>
+
+    <header id="header">
+        <nav>
+            <span id="toggle" onclick="toggleMenu()">
+                <ion-icon name="menu-outline"></ion-icon>
+            </span>
+            <span id="toggle-close" onclick="toggleMenu()">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+            <ul id="menu-links">
+                <li onclick="scrollToAboutMe()">About me</li>
+                <li onclick="scrollToEducation()">Education</li>
+                <li onclick="scrollToWorkExperience()">Work exprerience</li>
+                <li onclick="scrollToContact()">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="all-pages">
+
    
+    <section id="start-page">
+
+        <div id="hello-container">
+            <h1>hello,</h1>
+            <h2>I'm Anna Lindqvist</h2>
+        </div>
+        <div id="img-container">
+           
+        </div>
+
+    </section>
+
+    <section id="about-me-page">
+        <div class="about-me-big-container">
+            <div id="about-me-container-1">
+                <h2>about me</h2>
+                <p>
+                    <b>Who am I?</b> I'm a 28 years old woman who is eager to graduate and start working as a web developer! <br><br>
+                    In June 2023 I graudate as a Web developer after 2 years of distance studies at Glimåkra folkhögskola. 
+                    I'm open for all kinds of work such as frontend-,  backend-, and fullstack developing and also UX/UI-design. <br>
+                    <br>
+                    As a person I'm <i>solution-oriented, positive</i> and a <i>fast learner</i>. I like <i>working in team</i> where you can share knowledge and also <i>independently</i> where I can <i>challenge</i> myself even more. I'm <i>keen to learn new things</i> and can't wait to learn more about programming. 
+                    <!-- I'm happy to say that I 100% certain that I've chosen the correct path in my carrier.  -->
+                    <br>
+                    <br>
+                    Together with a classmate I've had the great oportunity to design and create two Wordpress-websites. Here's the links to them: <a href="https://www.helandehander.se/">Helande Händer</a>, <a href="https://www.klipp-nagelateljen.com/">Klipp & Nagelateljén</a>.
+                    <br>
+                    <br>
+                    I live in Örebro but I'm available for distance work. Please feel free to contact me!
+                </p>
+            </div>
+            <div id="about-me-container-2">
+                <h3>interests</h3>
+                <div id="interests-rows" class="margin-top">
+                    <div id="interests-row-1">
+                        <div>
+                            <ion-icon name="videocam-outline"></ion-icon>
+                            <p>Movies</p>
+                        </div>
+                        <div>
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                            <p>Food</p>
+                        </div>
+                        <div>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                            <p>Travelling</p>
+                        </div>
+                    </div>
+                    <div id="interests-row-2">
+                        <div>
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <p>People I love</p>
+                        </div>
+                        <div>
+                            <ion-icon name="musical-notes-outline"></ion-icon>
+                            <p>Music</p>
+                        </div>
+                        <div>
+                            <ion-icon name="language-outline"></ion-icon>
+                            <p>Foreign<br>languages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-me-big-container">
+            <div id="about-me-container-3">
+                <h3>skills</h3>
+                <ul class="margin-top">
+                    <li>
+                        <p>HTML5</p>
+                        <div id="HTML5-div"></div>
+                    </li>
+                    <li>
+                        <p>CSS </p>
+                        <div id="CSS-div"></div>
+                    </li>
+                    <li>
+                        <p>JavaScript</p>
+                        <div id="JavaScript-div"></div>
+                    </li>
+                    <li>
+                        <p>Node.js</p>
+                        <div id="Nodejs-div"></div>
+                    </li>
+                    <li>
+                        <p>Websocket</p>
+                        <div id="Websocket-div"></div>
+                    </li>
+                    <li>
+                        <p>React</p>
+                        <div id="React-div"></div>
+                    </li>
+                    <li>
+                        <p>SASS</p>
+                        <div id="SASS-div"></div>
+                    </li>
+                    <li>
+                        <p>Express</p>
+                        <div id="Express-div"></div>
+                    </li>
+                    <li>
+                        <p>Canvas API</p>
+                        <div id="CanvasAPI-div"></div>
+                    </li>
+                    <li>
+                        <p>Wordpress</p>
+                        <div id="Wordpress-div"></div>
+                    </li>
+                    <li>
+                        <p>GitHub</p>
+                        <div id="GitHub-div"></div>
+                    </li>
+                    <li>
+                        <p>Figma</p>
+                        <div id="Figma-div"></div>
+                    </li>
+                </ul>
+            </div>
+            <div id="about-me-container-4">
+                <h3>languages</h3>
+                <div id="language-circles" class="margin-top">
+                    <div id="swedish-circle">
+                        <p>Swedish</p>
+                    </div>
+                    <div id="english-circle">
+                        <div id="arc-start"></div>
+                        <div id="arc-end"></div>
+                        <p>English</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="education-page">
+        <div>
+            <h2>education</h2>
+        </div>
+
+        <div>
+            <h3>Web developer</h3>
+            <h4>Glimåkra folkhögskola</h4>
+            <h5>2021 - 2023</h5>
+            <p>I'm currently studying a 2 years distance education at Glimåkra folkhögskola where I learn both
+                front-end
+                and back-end programming. Read more about the school and my education <a class="marked-red"
+                    href="https://glimnet.se/kurser/webbutvecklare/">here</a> and see some of my school cases on
+                GitHub here (link coming soon).</p>
+        </div>
+        <div>
+            <h3>General english course</h3>
+            <h4>EF Language School, St Julian's Malta</h4>
+            <h5>September 2017 - December 2017</h5>
+            <p>I studied a general english couse in Malta for 3 months. It was a perfect way to refresh my english
+                knowledge but mostly I grew alot as a person. Walked out of my comfortzone completely!</p>
+        </div>
+        <div>
+            <h3>Social Science Program with focus on economics</h3>
+            <h4>Rekarnegymnasiet, Eskilstuna</h4>
+            <h5>August 2010 - June 2013</h5>
+        </div>
+
+    </section>
+
+    <section id="work-experience-page">
+        <div>
+            <h2>work experience</h2>
+        </div>
+        <div>
+            <h3>Sales assistant</h3>
+            <h4>Cubus</h4>
+            <h5>April 2022 - current</h5>
+        </div>
+        <div>
+            <h3>Customer service</h3>
+            <h4>Eskilstuna Strängnäs energi och miljö</h4>
+            <h5>May 2018 - current (on leave for studies)</h5>
+            <p>Helping customers thorugh phone/email and in out reception. I was also apart of a group
+                testing new functionality in our main buisness system.</p>
+        </div>
+        <div>
+            <h3>Sales assistans</h3>
+            <h4>IEMS, Eskilstuna</h4>
+            <h5>March 2018 - August 2018</h5>
+        </div>
+        <div>
+            <h3>Customer service</h3>
+            <h4>Bethard group, Malta</h4>
+            <h5>December 2017 - January 2018</h5>
+            <p>You may think this short stay at Bethard Group is not worthy a place in my resumé. But for me this is a
+                big part of my journey to become a stonger self.</p>
+        </div>
+        <div>
+            <h3>Café worker</h3>
+            <h4>Konditori Amarant, Eskilstuna</h4>
+            <h5>Januari 2017 - July 2017</h5>
+        </div>
+        <div>
+            <h3>Operations manager</h3>
+            <h4>Max hambugare, Eskilstuna</h4>
+            <h5>November 2013 - February 2017</h5>
+        </div>
+        <div>
+            <h3>Coworker</h3>
+            <h4>Chopchop, Eskilstuna</h4>
+            <h5>June 2013 - Augut 2013</h5>
+        </div>
+    </section>
+
+    <section id="contact-me-page">
+
+        <h2>contact me</h2>
+        <div id="contact-info-container">
+            <div>
+                
+                <a href="mailto:annalindqvist_@live.se"><ion-icon name="mail-outline"></ion-icon> annalindqvist_@live.se</a>
+            </div>
+            <div>
+                
+                <a href="tel:+46762099142"><ion-icon name="call-outline"></ion-icon> 076-2099142</a>
+            </div>
+            <div>
+                
+                <a href="https://www.linkedin.com/in/anna-lindqvist-77412322b/"><ion-icon name="logo-linkedin"></ion-icon> Linkedin</a>
+            </div> 
+        </div>
+    </section>
+</div>
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
