@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    font-size: 43px;
+    font-size: 36px;
     margin: 1rem 0 1rem 0;
 
 }
@@ -53,6 +53,7 @@ p {
 
 a {
     text-decoration: none;
+    color: #FF0000;
 }
 
 .marked-red {
@@ -112,11 +113,6 @@ header nav {
     font-size: 20px;
     color: #FF0000;
     font-family: 'Yeseva One', cursive;
-}
-
-.active {
-    color: #FF0000;
-    font-weight: bold;
 }
 
 #start-page {
@@ -370,7 +366,7 @@ header nav {
     margin: 0.5rem;
     gap: 1rem;
     text-decoration: none;
-    font-size: 20px;
+    
     font-weight: 500;
     color: #1c1c1c;
     
@@ -379,7 +375,7 @@ header nav {
 #contact-info-container div ion-icon {
     text-align: left;
     color: #FF0000;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 @media only screen and (min-width: 768px) {
