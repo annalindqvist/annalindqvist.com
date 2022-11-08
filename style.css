@@ -15,7 +15,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3
+ {
     color: #FF0000;
     font-family: 'Yeseva One', cursive;
     margin: 1rem 0 1rem 0;
@@ -27,25 +28,57 @@ h1 {
 
 h2 {
     font-size: 43px;
+    margin: 1rem 0 1rem 0;
 
 }
 
 h3 {
-    font-size: 32px;
-
+    font-size: 22px;
     text-align: center;
+    margin: 1rem 0 0.5rem 0;
+}
+h4 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    /* margin: 0.5rem 0 0.5rem 0; */
+    margin-top: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.marked-red {
+    color: #FF0000;
+}
+
+.margin-top {
+    margin-top: 1.5rem;
 }
 
 header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100vw;
-    height: 20vh;
+    height: 3.5rem;
+    background-color: #f9bad1;
+    z-index: 999;
 }
 
 header nav {
     display: flex;
     justify-content: flex-end;
+    max-height: 100vh;
+    max-width: 100%;
 }
 
 #toggle,
@@ -64,7 +97,6 @@ header nav {
 
 #menu-links {
     display: none;
-
     background-color: #f9bad1;
     height: 100vh;
     width: 100vw;
@@ -73,7 +105,7 @@ header nav {
     align-items: center;
     list-style-type: none;
     padding: 0;
-
+    z-index: 9;
 }
 
 #menu-links li {
@@ -91,20 +123,32 @@ header nav {
 #start-page {
     /* padding: 1rem; */
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    flex-direction: column;
+    align-items: center; 
+    justify-content:center;
+    position: relative;
+    gap: 2rem;
+}
+#hello-container {
+    
+    
 }
 
 #img-container {
-    width: 50vw;
-    height: 50vh;
-    background-image: url(images/IMG_9084.jpg);
+    /* position: absolute;
+    bottom: 3.5rem;
+    right: 0; */
+   
+    width: 80%;
+    height: 50%;
+    background-image: url(images/anna.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 40px;
+    background-size:contain;
+    background-position: center;
 }
+
 
 #about-me-page {
     margin-top: 3rem;
@@ -117,18 +161,16 @@ header nav {
     align-items: center;
     gap: 2rem;
     justify-content: space-evenly;
-
 }
 
-#about-me-big-container {
+.about-me-big-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
-
-#about-me-container-2 {
-    /* margin: 1rem; */
+#about-me-container-1 {
+    text-align: center;
 }
 
 #interests-rows {
@@ -293,6 +335,68 @@ header nav {
     position: absolute;
 }
 
+#education-page, #work-experience-page {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-evenly;
+    text-align: center;
+}
+/* #education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+    text-align: center;
+} */
+
+#contact-me-page {
+    
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 2rem; 
+    text-align: center;
+    
+}
+#contact-info-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact-info-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    gap: 1rem;
+    
+}
+
+#contact-info-container div a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1c1c1c;
+}
+
+#contact-info-container div ion-icon {
+    text-align: left;
+    color: #FF0000;
+    font-size: 32px;
+}
+
 @media only screen and (min-width: 768px) {
     #toggle {
         display: none;
@@ -314,6 +418,11 @@ header nav {
 
     #start-page {
         flex-direction: row;
+    }
+
+
+    a:hover {
+        font-size: bold;
     }
 
 }

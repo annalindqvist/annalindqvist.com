@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
             <span id="toggle" onclick="toggleMenu()">
                 <ion-icon name="menu-outline"></ion-icon>
@@ -19,13 +19,16 @@
                 <ion-icon name="close-outline"></ion-icon>
             </span>
             <ul id="menu-links">
-                <li>About me</li>
-                <li>Education</li>
-                <li>Work exprerience</li>
-                <li>Contact</li>
+                <li onclick="scrollToAboutMe()">About me</li>
+                <li onclick="scrollToEducation()">Education</li>
+                <li onclick="scrollToWorkExperience()">Work exprerience</li>
+                <li onclick="scrollToContact()">Contact</li>
             </ul>
         </nav>
     </header>
+    <div id="all-pages">
+
+   
     <section id="start-page">
 
         <div id="hello-container">
@@ -33,13 +36,13 @@
             <h2>I'm Anna Lindqvist</h2>
         </div>
         <div id="img-container">
-
+           
         </div>
 
     </section>
 
     <section id="about-me-page">
-        <div id="about-me-big-container">
+        <div class="about-me-big-container">
             <div id="about-me-container-1">
                 <h2>about<br>me</h2>
                 <p>
@@ -51,7 +54,7 @@
             </div>
             <div id="about-me-container-2">
                 <h3>interests</h3>
-                <div id="interests-rows">
+                <div id="interests-rows" class="margin-top">
                     <div id="interests-row-1">
                         <div>
                             <ion-icon name="videocam-outline"></ion-icon>
@@ -83,10 +86,10 @@
                 </div>
             </div>
         </div>
-        <div id="about-me-big-container">
+        <div class="about-me-big-container">
             <div id="about-me-container-3">
                 <h3>skills</h3>
-                <ul>
+                <ul class="margin-top">
                     <li>
                         <p>HTML5</p>
                         <div id="HTML5-div"></div>
@@ -139,7 +142,7 @@
             </div>
             <div id="about-me-container-4">
                 <h3>languages</h3>
-                <div id="language-circles">
+                <div id="language-circles" class="margin-top">
                     <div id="swedish-circle">
                         <p>Swedish</p>
                     </div>
@@ -156,65 +159,100 @@
     </section>
 
     <section id="education-page">
-        <h2>Utbildning</h2>
         <div>
-            <h3>Glimåkra Folkhögskola, Webbutvecklare</h3>
-            <p>Augusti 2021 - Juni 2023 (pågående)</p>
+            <h2>education</h2>
+        </div>
+
+        <div>
+            <h3>Web developer</h3>
+            <h4>Glimåkra folkhögskola</h4>
+            <h5>2021 - 2023</h5>
+            <p>I'm currently studying a 2 years distance education at Glimåkra folkhögskola where I learn both
+                front-end
+                and back-end programming. Checkout more about the school <a class="marked-red"
+                    href="https://glimnet.se/kurser/webbutvecklare/">here</a> and see some of my school cases on
+                GitHub
+                here.</p>
         </div>
         <div>
-            <h3>EF Language School, St Julian's Malta</h3>
-            <p>Allmän engelska kurs, September 2017 - December 2017</p>
+            <h3>General english course</h3>
+            <h4>EF Language School, St Julian's Malta</h4>
+            <h5>September 2017 - December 2017</h5>
+            <p>Studied a general english couse in Malta for 3 months. It was a perfect way to refresh my english
+                knowledge but mostly I grew as a person. Walked out of my comfortzone completely! </p>
         </div>
         <div>
-            <h3>Samhällsvetenskapliga programmet - ekonomisk inriktning, Rekarnegymnasiet</h3>
-            <p>August 2010 - June 2013</p>
+            <h3>Social Science Program with focus on economics</h3>
+            <h4>Rekarnegymnasiet, Eskilstuna</h4>
+            <h5>August 2010 - June 2013</h5>
         </div>
+
     </section>
 
     <section id="work-experience-page">
-        <h2>Arbetslivserfarenhet</h2>
         <div>
-            <h3>Kundkommunikatör</h3>
+            <h2>work<br>experience</h2>
+        </div>
+        <div>
+            <h3>Sales assistant</h3>
+            <h4>Cubus</h4>
+            <h5>April 2022 - current</h5>
+        </div>
+        <div>
+            <h3>Customer service</h3>
             <h4>Eskilstuna Strängnäs energi och miljö</h4>
-            <p>Maj 2018 - pågående (tjänstledig för studier)</p>
-            <p>Vad gör/gjorde jag här? BFU, telefon mejl besök?</p>
+            <h5>May 2018 - current (on leave for studies)</h5>
+            <p>Helping customers thorugh phone/email and in out reception. I was also apart of a group
+                testing new functionality in our main buisness system.</p>
         </div>
         <div>
-            <h3>Butiksbiträde</h3>
-            <h4>IEMS</h4>
-            <p>Mars 2018 - Augusti 2018</p>
-            <p>Extraarbete i en inredningsbutik</p>
+            <h3>Sales assistans</h3>
+            <h4>IEMS, Eskilstuna</h4>
+            <h5>March 2018 - August 2018</h5>
         </div>
         <div>
-            <h3>Kundtjänstagent</h3>
-            <h4>Bethard Group, Malta</h4>
-            <p>December 2017 - Januari 2018</p>
-            <p>Kanske inte mycket att skriva på ett cv men lärde mig extremt mycket under denna period.. </p>
+            <h3>Customer service</h3>
+            <h4>Bethard group, Malta</h4>
+            <h5>December 2017 - January 2018</h5>
+            <p>You may think this short stay at Bethard Group is not worthy a place in my resumé. But for me this is a
+                big part of my journey to become a stonger self.</p>
         </div>
         <div>
-            <h3>Café medarbetare</h3>
-            <h4>Konditori Amarant</h4>
-            <p>Januari 2017 - Juli 2017</p>
-            <p></p>
+            <h3>Café worker</h3>
+            <h4>Konditori Amarant, Eskilstuna</h4>
+            <h5>Januari 2017 - July 2017</h5>
         </div>
         <div>
-            <h3></h3>
-            <h4></h4>
-            <p></p>
-            <p></p>
+            <h3>Operations manager</h3>
+            <h4>Max hambugare, Eskilstuna</h4>
+            <h5>November 2013 - February 2017</h5>
         </div>
         <div>
-            <h3></h3>
-            <h4></h4>
-            <p></p>
-            <p></p>
+            <h3>Coworker</h3>
+            <h4>Chopchop, Eskilstuna</h4>
+            <h5>June 2013 - Augut 2013</h5>
         </div>
     </section>
 
-    </main>
-    <footer>
+    <section id="contact-me-page">
 
-    </footer>
+        <h2>contact<br>me</h2>
+        <div id="contact-info-container">
+            <div>
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:annalindqvist_@live.se">annalindqvist_@live.se</a>
+            </div>
+            <div>
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:+46762099142">076-2099142</a>
+            </div>
+            <div>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <a href="https://www.linkedin.com/in/anna-lindqvist-77412322b/">Linkedin</a>
+            </div> 
+        </div>
+    </section>
+</div>
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
