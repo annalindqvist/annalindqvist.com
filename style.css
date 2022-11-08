@@ -435,7 +435,7 @@ header nav {
         height: 12px;
         position: relative;
     }
-    #education-page div, #work-experience-page div{
+    #education-page div, #work-experience-page div {
         max-width: 50%;
-        
     }
+}
