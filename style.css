@@ -292,6 +292,9 @@ header nav {
     height: 100px;
     border-radius: 50%;
 }
+#about-me-container-4 #language-circles div p {
+    margin-top: 0;
+}
 
 #about-me-container-4 #language-circles #swedish-circle {
     border: 3px solid #FF0000;
@@ -301,21 +304,21 @@ header nav {
 }
 #about-me-container-4 #language-circles #english-circle #arc-start {
     border-color: transparent #FF0000 #FF0000 #FF0000;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    transform: rotate(-40deg);
     position: absolute;
 }
 
 #about-me-container-4 #language-circles #english-circle #arc-end {
     border-color: #FF0000 #FF0000 #FF0000 transparent;
-    -webkit-transform: rotate(75deg);
-    -moz-transform: rotate(75deg);
-    -ms-transform: rotate(75deg);
-    -o-transform: rotate(75deg);
-    transform: rotate(75deg);
+    -webkit-transform: rotate(80deg);
+    -moz-transform: rotate(80deg);
+    -ms-transform: rotate(80deg);
+    -o-transform: rotate(80deg);
+    transform: rotate(80deg);
     position: absolute;
 }
 
