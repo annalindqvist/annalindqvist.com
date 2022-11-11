@@ -160,7 +160,7 @@ header nav {
 #interests-rows {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.5rem;
 }
 
 #interests-rows #interests-row-1,
@@ -171,6 +171,13 @@ header nav {
     text-align: center;
     gap: 2rem;
     font-weight: bold;
+}
+
+#interests-rows #interests-row-1 div,
+#interests-rows #interests-row-2 div {
+    width: 90px;
+    height: 90px;
+    
 }
 
 #about-me-container-3 ul li {
