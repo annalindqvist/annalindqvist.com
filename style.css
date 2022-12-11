@@ -222,7 +222,7 @@ header nav {
 #Nodejs-div::after {
     content: "";
     background-color: #FF0000;
-    width: 50%;
+    width: 60%;
     height: 100%;
     position: absolute;
 }
@@ -236,7 +236,7 @@ header nav {
 #React-div::after {
     content: "";
     background-color: #FF0000;
-    width: 50%;
+    width: 40%;
     height: 100%;
     position: absolute;
 }
@@ -250,7 +250,21 @@ header nav {
 #Express-div::after {
     content: "";
     background-color: #FF0000;
-    width: 50%;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+}
+#MongoDB-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+}
+#EJS-div::after {
+    content: "";
+    background-color: #FF0000;
+    width: 60%;
     height: 100%;
     position: absolute;
 }
