@@ -22,7 +22,7 @@ toggleMenu = () => {
 }
 
 scrollToAboutMe = () => {
-    const aboutMe = document.getElementById("about-me-page");
+    const aboutMe = document.getElementById("about-me");
 
     if (windowSize.matches) {
         toggleMenu();
@@ -30,23 +30,15 @@ scrollToAboutMe = () => {
     window.scroll({ top: (aboutMe.offsetTop - offset), left: 0, behavior: 'smooth' });
 }
 
-scrollToEducation = () => {
-    const education = document.getElementById("education-page");
-    if (windowSize.matches) {
-        toggleMenu();
-    }
-    window.scroll({ top: (education.offsetTop - offset), left: 0, behavior: 'smooth' });
-}
-
-scrollToWorkExperience = () => {
-    const workExperience = document.getElementById("work-experience-page");
+scrollToMyWork = () => {
+    const workExperience = document.getElementById("my-work");
     if (windowSize.matches) {
         toggleMenu();
     }
     window.scroll({ top: (workExperience.offsetTop - offset), left: 0, behavior: 'smooth' });
 }
 scrollToContact = () => {
-    const contact = document.getElementById("contact-me-page");
+    const contact = document.getElementById("contact-me");
     if (windowSize.matches) {
         toggleMenu();
     }

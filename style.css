@@ -1,84 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
-    /* font-family: 'Yeseva One', cursive; */
 }
 
 body {
-    background-color: #f9bad1;
-    padding: 1rem;
+    background-color: #1c1c1c;
+    font-family: 'Poppins', sans-serif;
+    color: #fafafa;
+    max-width: 100vw;
+}
+
+main {
+    margin: 1rem;
 }
 
 h1,
 h2,
-h3
- {
-    color: #FF0000;
-    font-family: 'Yeseva One', cursive;
-    margin: 1rem 0 1rem 0;
+h4,
+h5 {
+    margin-bottom: 1rem;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 h2 {
-    font-size: 36px;
-    margin: 1rem 0 1rem 0;
-
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
 }
 
 h3 {
-    font-size: 22px;
-    text-align: center;
-    margin: 1rem 0 0.5rem 0;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 1.5rem;
 }
+
 h4 {
-    font-size: 18px;
-    font-weight: normal;
-    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
 }
+
 h5 {
     font-size: 16px;
     font-weight: bold;
-    text-align: center;
-}
-p {
-    margin-top: 0.5rem;
 }
 
 a {
     text-decoration: none;
-    color: #FF0000;
+    color: #fafafa;
 }
 
-.marked-red {
-    color: #FF0000;
+.roboto-mono {
+    font-family: 'Roboto Mono', monospace;
 }
 
-.margin-top {
-    margin-top: 1.5rem;
+.small-roboto {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.marked-pink {
+    color: #D32745;
+}
+
+ion-icon {
+    color: #D32745;
+}
+
+#wave {
+    font-size: 30px;
+}
+
+#wave ion-icon {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.contact-me-btn {
+    width: 180px;
+    height: 50px; 
+    border-radius: 50px;
+    border: 3px solid #D32745;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;   
 }
 
 header {
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 3.5rem;
-    background-color: #f9bad1;
-    z-index: 999;
+    z-index: 8;
+    padding: 1rem;
+
 }
 
 header nav {
     display: flex;
     justify-content: flex-end;
-    max-height: 100vh;
-    max-width: 100%;
+
+}
+
+#header-img {
+    width: 45px;
+    height: 45px;
+    background-image: url(images/me.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
 }
 
 #toggle,
@@ -88,16 +169,20 @@ header nav {
     top: 1rem;
     right: 1rem;
     font-size: 32px;
-    color: #FF0000;
+    color: #fafafa;
 }
 
 #toggle-close {
     display: none;
 }
 
+.display-none {
+    display: none;
+}
+
 #menu-links {
     display: none;
-    background-color: #f9bad1;
+    background-color: #1c1c1c;
     height: 100vh;
     width: 100vw;
     flex-direction: column;
@@ -106,309 +191,121 @@ header nav {
     list-style-type: none;
     padding: 0;
     z-index: 9;
+    margin: -0.5rem;
+    text-transform: uppercase;
 }
 
 #menu-links li {
     margin: 1rem;
     font-size: 20px;
-    color: #FF0000;
-    font-family: 'Yeseva One', cursive;
+    color: #fafafa;
+
 }
 
 #start-page {
-    /* padding: 1rem; */
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content:center;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     position: relative;
     gap: 2rem;
 }
 
 #img-container {
-    width: 80%;
-    height: 50%;
-    background-image: url(images/anna.png);
+    width: 100%;
+    height: 30%;
+    background-image: url(images/me.png);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     background-position: center;
 }
 
-#about-me-page {
-    /* margin-top: 3rem; */
-    
+section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+#about-me-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0.5rem;
+}
+
+#about-me-container ul li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+#my-work-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    justify-content: space-evenly;
 }
 
-.about-me-big-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-#about-me-container-1 {
-    text-align: center;
+#my-work-container .grey-box {
+    background-color: #262626;
+    margin: 1.5rem 0;
+    padding: 1rem;
 }
 
-#interests-rows {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+#my-work-container .grey-box p {
+    font-size: 14px;
 }
 
-#interests-rows #interests-row-1,
-#interests-rows #interests-row-2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-    font-weight: bold;
-}
-
-#interests-rows #interests-row-1 div,
-#interests-rows #interests-row-2 div {
-    width: 90px;
-    height: 90px;
-    
-}
-
-#about-me-container-3 ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-}
-
-#about-me-container-3 ul li p {
-    font-weight: 500;
-}
-
-#about-me-container-3 ul li div {
-    background-color: #FFF8F9;
-    width: 200px;
-    height: 12px;
-    position: relative;
-}
-
-#HTML5-div::after {
-    content: "";
-    background-color: #FF0000;
+#loop-capital {
     width: 100%;
-    height: 100%;
-    position: absolute;
-}
-#CSS-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 98%;
-    height: 100%;
-    position: absolute;
-}
-#JavaScript-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 92%;
-    height: 100%;
-    position: absolute;
-}
-#Nodejs-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 60%;
-    height: 100%;
-    position: absolute;
-}
-#Websocket-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 70%;
-    height: 100%;
-    position: absolute;
-}
-#React-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 40%;
-    height: 100%;
-    position: absolute;
-}
-#SASS-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 60%;
-    height: 100%;
-    position: absolute;
-}
-#Express-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 60%;
-    height: 100%;
-    position: absolute;
-}
-#MongoDB-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 60%;
-    height: 100%;
-    position: absolute;
-}
-#EJS-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 60%;
-    height: 100%;
-    position: absolute;
-}
-#CanvasAPI-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 70%;
-    height: 100%;
-    position: absolute;
-}
-#Wordpress-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 83%;
-    height: 100%;
-    position: absolute;
-}
-#GitHub-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 60%;
-    height: 100%;
-    position: absolute;
-}
-#Figma-div::after {
-    content: "";
-    background-color: #FF0000;
-    width: 75%;
-    height: 100%;
-    position: absolute;
+    height: 200px;
+    background-image: url(images/loop-capital.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 1rem;
 }
 
-#about-me-container-4 #language-circles {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-}
-
-#about-me-container-4 #language-circles div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border: 3px solid #FFF8F9;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-#about-me-container-4 #language-circles div p {
-    margin-top: 0;
-}
-
-#about-me-container-4 #language-circles #swedish-circle {
-    border: 3px solid #FF0000;
-}
-#about-me-container-4 #language-circles #english-circle {
-    position: relative;
-}
-#about-me-container-4 #language-circles #english-circle #arc-start {
-    border-color: transparent #FF0000 #FF0000 #FF0000;
-    -webkit-transform: rotate(-40deg);
-    -moz-transform: rotate(-40deg);
-    -ms-transform: rotate(-40deg);
-    -o-transform: rotate(-40deg);
-    transform: rotate(-40deg);
-    position: absolute;
-}
-
-#about-me-container-4 #language-circles #english-circle #arc-end {
-    border-color: #FF0000 #FF0000 #FF0000 transparent;
-    -webkit-transform: rotate(80deg);
-    -moz-transform: rotate(80deg);
-    -ms-transform: rotate(80deg);
-    -o-transform: rotate(80deg);
-    transform: rotate(80deg);
-    position: absolute;
-}
-
-#education-page, #work-experience-page {
-    margin-top: 4rem;
+#helande-hander {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    justify-content: space-evenly;
-    text-align: center;
+    height: 200px;
+    background-image: url(images/helande-hander.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 1rem;
 }
-/* #education-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    justify-content: space-evenly;
-    text-align: center;
-} */
 
-#contact-me-page {
-    
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+#klipp-nagelateljen {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    gap: 2rem; 
-    text-align: center;
-    
-}
-#contact-info-container {
-    
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
+    height: 200px;
+    background-image: url(images/klipp-nagelateljen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 1rem;
 }
 
-#contact-info-container div a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
-    gap: 1rem;
-    text-decoration: none;
-    
-    font-weight: 500;
-    color: #1c1c1c;
-    
+#contact-me p {
+    margin-bottom: 1rem;
 }
 
-#contact-info-container div ion-icon {
-    text-align: left;
-    color: #FF0000;
+#contact-me div {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+#contact-me div ion-icon {
+    color: #fafafa;
     font-size: 28px;
 }
 
-@media only screen and (min-width: 768px) {
-
-    h1 {
-        font-size: 96px;
-    }
-    h2 {
-        font-size: 48px;
+ @media only screen and (min-width: 769px) { 
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 4rem; 
     }
 
     a:hover {
@@ -416,50 +313,181 @@ header nav {
         cursor: pointer;
     }
 
+    section {
+        margin-bottom: 7rem;
+    }
+
     #toggle {
         display: none;
     }
 
+    .display-none {
+        display: block;
+
+    }
+
+    header {
+        height: 5rem;
+        display: flex;
+        padding: 1rem 5rem;
+        align-items: center;
+        gap: 2rem;
+
+    }
+
+    #header-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #header-img:hover {
+        width: 100px;
+        height: 100px;
+        margin-top: auto;
+    }
+
     #menu-links {
         display: flex;
-        justify-content: flex-end;
         flex-direction: row;
         list-style-type: none;
-        width: 100%;
-        height: 100%;
-        margin-right: 1rem;
+        width: auto;
+        height: auto;
+        background-color: transparent;
     }
 
     #menu-links li {
-        /* font-family: 'Manrope', sans-serif; */
-        /* color: #1c1c1c; */
-        color: #FF0000;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #menu-links li:hover {
+        font-weight: 500;
+    }
+
+    .display-none {
+       margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .display-none a ion-icon {
+        color: #fafafa;
+        font-size: 25px;
+    }
+
+    .display-none a ion-icon:hover, #contact-me ion-icon:hover {
+        font-size: 30px;
+    }
+
+    .contact-me-btn {
+        width: 220px;
+        height: 60px;
+        cursor: pointer;
+    }
+    .contact-me-btn:hover {
+        width: 222px;
+        height: 62px;
+        font-weight: 600;
     }
 
     #start-page {
         flex-direction: row;
-        gap: 0;
-    }
-    #img-container {
-        width: 40%;
-        height: 80%;
+        padding-top: 2rem;
     }
 
-    #about-me-page {
-        flex-direction: row;
-        align-items: initial;
-    }
-    .about-me-big-container {
+    #hello-container {
+        margin-top: 4rem;
         width: 50%;
-        
+        margin-right: 4rem;
     }
-    #about-me-container-3 ul li div {
-        background-color: #FFF8F9;
-        width: 250px;
-        height: 12px;
-        position: relative;
+
+    #img-container {
+        width: 35%;
+        height: 70%;
     }
-    #education-page div, #work-experience-page div {
-        max-width: 50%;
+
+    
+    #about-me {
+        width: 80%;
+    }
+
+    #about-me-container ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0.5rem;
+    }
+
+    #my-work {
+        width: 90%;
+    }
+
+    .grey-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grey-box div {
+        width: 50%;
+        margin: 1rem;
+    }
+
+    #grey-box-2 {
+        flex-direction: row-reverse;
+    }
+
+    #loop-capital,
+    #klipp-nagelateljen,
+    #helande-hander {
+        width: 50%;
+    }
+
+    #contact-me {
+        width: 60%;
+    }
+} 
+
+@media only screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
+
+    #about-me {
+        width: 50%;
+    }
+
+    #my-work {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1500px) { 
+
+    main {
+        margin: 0 6rem;
+    }
+
+    header {
+        padding: 2rem 6rem;
+    }
+
+    #my-work {
+        width: 70%;
     }
 }
